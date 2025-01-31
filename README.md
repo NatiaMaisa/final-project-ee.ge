@@ -14,4 +14,8 @@ One class for RestApi testing, checking status code and time.
 - IntelliJ IDEA
 
 ## Running Tests
-To run the tests, use TestNG file.
+To run all tests, use TestNG file.
+
+or use command in Terminal
+'''sh
+mvn test
