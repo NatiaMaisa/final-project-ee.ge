@@ -5,8 +5,8 @@ One class for RestApi testing, checking status code and time.
 
 ## Project Structure
 - `src/main/java/ge/ee/pages/` : Contains page object classes for different pages of the Elite website.
-- 'src/test/java/ge/ee/' : Contains base test class and test classes.
-- 'src/test/java': Contains one class for testing Rest Api.
+- `src/test/java/ge/ee/` : Contains base test class and test classes.
+- `src/test/java`: Contains one class for testing Rest Api.
 
 ## Prerequsites
 - Java 8 or higher
@@ -17,4 +17,5 @@ One class for RestApi testing, checking status code and time.
 To run all tests, use TestNG file.
 
 or use command in Terminal: 
+```sh
 mvn test
