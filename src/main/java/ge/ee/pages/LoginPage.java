@@ -25,7 +25,6 @@ public class LoginPage extends BasePage {
     WebElement errorMessage;
 
 
-
     public void login (String email, String password){
         enterText(emailField, email);
         enterText(passwordField, password);

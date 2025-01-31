@@ -17,8 +17,6 @@ public class ProfilePage extends BasePage {
     @FindBy(xpath = "//button[contains(text(),'გამოსვლა')]")
     WebElement logOutButton;
 
-
-
     public void openProfileSection(){
         waitForElementToBeVisible(profileButton);
         clickToElementWithWait(profileButton);

@@ -1,5 +1,6 @@
 package ge.ee;
 
+import ge.ee.utils.ConfigReader;
 import ge.ee.utils.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;

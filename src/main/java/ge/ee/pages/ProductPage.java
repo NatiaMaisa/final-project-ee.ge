@@ -37,15 +37,11 @@ public class ProductPage extends BasePage {
     @FindBy(xpath = "//button[contains(@class, 'btn-darkred') and contains(@class, 'add_to_cart')]")
     WebElement addToCartButton;
 
-
     @FindBy(xpath = "//div[@class='buttons']//span[@class='cart-count']")
     WebElement cartQuantity;
 
     @FindBy(xpath = "//div[@id='loading']")
     WebElement loadingElement;
-
-
-
 
 
     public void selectingMobilePhonesSection(){
@@ -88,7 +84,18 @@ public class ProductPage extends BasePage {
 
     public int getCardCount(){
         scrollToElement(cartQuantity);
+        waitForElementToBeVisible(cartQuantity);
         return getElementIntegerValue(cartQuantity);
+    }
+
+    // ველოდები სანამ კალათის ინფორმაცია განახლდება
+    public void waitForCartToUpdate() {
+        try {
+            sleep(3000);
+        } catch (InterruptedException e) {
+            System.err.println("Sleep interrupted: " + e.getMessage());
+            Thread.currentThread().interrupt();
+        }
     }
 
 }

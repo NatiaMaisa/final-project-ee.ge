@@ -26,8 +26,12 @@ public class SearchPage extends BasePage {
     @FindBy(xpath = "//span[contains(@class, 'title d-xs-none')]")
     List<WebElement> allSearchResultTitles;
 
+    @FindBy(xpath = "//div[@id='loading']")
+    WebElement loadingElement;
+
 
     public void searchProduct(String query) {
+        waitForLoadingToDisappear(loadingElement);
         clearFieldWithWait(searchField);
         enterText(searchField, query);
         clickToElement(searchButton);

@@ -24,7 +24,6 @@ public class CartPage extends BasePage {
     WebElement emptyCartText;
 
     public void clickToCartButton(){
-        //waitForElementToBeVisible(cartButton);
         clickToElementWithWait(cartButton);
     }
 
@@ -33,7 +32,6 @@ public class CartPage extends BasePage {
     }
 
     public void setRemoveFromCartButton(){
-       // waitForElementToBeVisible(removeFromCartButton);
         clickToElementWithWait(removeFromCartButton);
     }
 

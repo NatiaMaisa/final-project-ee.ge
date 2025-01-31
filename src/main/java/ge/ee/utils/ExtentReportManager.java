@@ -14,7 +14,7 @@ public class ExtentReportManager {
             String reportPath = System.getProperty("user.dir") + "/report/ExtentReport.html";
             ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
             sparkReporter.config().setReportName("ee.ge Automation Test Report");
-            sparkReporter.config().setDocumentTitle("ee.ge Test Execution Report");
+            sparkReporter.config().setDocumentTitle("Test Execution Report");
 
             extent = new ExtentReports();
             extent.attachReporter(sparkReporter);

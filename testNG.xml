@@ -33,4 +33,11 @@
             <class name="ge.ee.tests.ProfileTest"/>
         </classes>
     </test>
+
+    <test name="Rest Api Test">
+        <classes>
+            <class name="RestApiTest"/>
+        </classes>
+    </test>
 </suite>
+
