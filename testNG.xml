@@ -1,0 +1,36 @@
+<suite name="Final Project - ee.ge">
+
+    <listeners>
+        <listener class-name="ge.ee.utils.TestListener"/>
+    </listeners>
+
+    <test name="Login Scenarios">
+        <classes>
+            <class name="ge.ee.tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Search Scenarios">
+        <classes>
+            <class name="ge.ee.tests.SearchTest"/>
+        </classes>
+    </test>
+
+    <test name="Product Scenarios">
+        <classes>
+            <class name="ge.ee.tests.ProductTest"/>
+        </classes>
+    </test>
+
+    <test name="Cart Scenarios">
+        <classes>
+            <class name="ge.ee.tests.CartTest"/>
+        </classes>
+    </test>
+
+    <test name="Profile Scenarios">
+        <classes>
+            <class name="ge.ee.tests.ProfileTest"/>
+        </classes>
+    </test>
+</suite>
