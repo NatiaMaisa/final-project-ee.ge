@@ -16,6 +16,5 @@ One class for RestApi testing, checking status code and time.
 ## Running Tests
 To run all tests, use TestNG file.
 
-or use command in Terminal
-'''sh
+or use command in Terminal: 
 mvn test
